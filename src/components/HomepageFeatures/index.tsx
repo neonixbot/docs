@@ -10,32 +10,31 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Easy to Use",
+    title: "Fácil de Usar",
     Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
     description: (
       <>
-        Zeta was designed with lots useful commands. And it's really easy to
-        use!
+        ¡NeonixHub fue diseñado con muchos comandos útiles y es realmente fácil
+        de usar!
       </>
     ),
   },
   {
-    title: "Actively Maintained",
+    title: "Mantenido Activamente",
     Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
     description: (
       <>
-        Zeta was actively maintained at <a href="https://github.com/vzetaa/zeta">GitHub</a>. We commonly update it's
-        dependencies and the code.
+        NeonixHub se mantiene activamente en <a href="https://github.com/neonixbot/neonixbot">GitHub</a>. Comúnmente actualizamos sus dependencias y el código.
       </>
     ),
   },
   {
-    title: "Self-host? No problem",
+    title: "¿Auto-alojamiento? No hay problema",
     Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
     description: (
       <>
-        Zeta is built with Node.js and it's really easy to self-host this
-        bot!
+        ¡NeonixHub está construido con Node.js y es muy fácil de alojar este
+        bot por tu cuenta!
       </>
     ),
   },
@@ -68,3 +67,4 @@ export default function HomepageFeatures(): JSX.Element {
     </section>
   );
 }
+
