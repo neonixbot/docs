@@ -18,7 +18,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            📄 Read the docs
+            📄 Documentación
           </Link>
         </div>
       </div>
@@ -31,7 +31,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Main documentation page for Zeta Discord Bot"
+      description="Documentación general del bot NeonixHub"
     >
       <HomepageHeader />
       <main>

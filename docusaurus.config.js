@@ -6,14 +6,14 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Zeta",
-  tagline: "Our Beloved Helper Discord Bot",
-  url: "https://zetaa.gq",
+  title: "NeonixHUB",
+  tagline: "Un bot multifuncional basico",
+  url: "https://docs.neonixhub.xyz",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/logo.png",
-  organizationName: "vzetaa", // Usually your GitHub org/user name.
+  organizationName: "neoonixhub", // Usually your GitHub org/user name.
   projectName: "docs", // Usually your repo name.
 
   presets: [
@@ -24,12 +24,12 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/vzetaa/docs/tree/master/docs/",
+          editUrl: "https://github.com/neonixhub/docs",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/vzetaa/docs/tree/master/blog/",
+          editUrl: "https://github.com/neonixhub/docs/tree/master/blog",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -42,9 +42,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "Zeta",
+        title: "NeonixHub",
         logo: {
-          alt: "Zeta Logo",
+          alt: "NeonixLogo",
           src: "img/logo.png",
         },
         items: [
@@ -52,11 +52,11 @@ const config = {
             type: "doc",
             docId: "intro",
             position: "left",
-            label: "Documentation",
+            label: "Documentación",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/vzetaa/zeta",
+            href: "https://github.com/noenixhub/neonixbot",
             label: "GitHub",
             position: "right",
           },
@@ -66,10 +66,10 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Documentation",
+            title: "Documentacción",
             items: [
               {
-                label: "Introduction",
+                label: "Introducción",
                 to: "/docs/intro",
               },
               {
@@ -77,13 +77,13 @@ const config = {
                 to: "/docs/self-host/installation",
               },
               {
-                label: "Commands",
+                label: "Comandos",
                 to: "/docs/commands/admin",
               },
             ],
           },
           {
-            title: "Community",
+            title: "Comunidad",
             items: [
               {
                 label: "Stack Overflow",
@@ -100,7 +100,7 @@ const config = {
             ],
           },
           {
-            title: "More",
+            title: "Más",
             items: [
               {
                 label: "Blog",
@@ -108,21 +108,21 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/vzetaa/zeta",
+                href: "https://github.com/neonixhub/",
               },
             ],
           },
           {
-            title: "Sponsors",
+            title: "Patrocinios",
             items: [
               {
-                label: "No one sponsored this project T_T",
-                href: "#",
+                label: "Quiero Patrocinar el Projecto.",
+                href: "https://www.neonixhub.xyz/donar",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Falcxxdev.`,
+        copyright: `Copyright © ${new Date().getFullYear()} NeonixHub.`,
       },
       prism: {
         theme: lightCodeTheme,

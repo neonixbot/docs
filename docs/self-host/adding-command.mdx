@@ -2,73 +2,73 @@
 sidebar_position: 6
 ---
 
-# Adding new Command
+# Agregar un nuevo comando
 
-If you want to creating new command, of course you can add it into appropriate categories you want.
+Si deseas crear un nuevo comando, por supuesto, puedes agregarlo a la categoría adecuada que prefieras.
 
-## Normal Command
+## Comando normal
 
-Normal command can be executed by putting a prefix before the command name.
+Un comando normal se puede ejecutar colocando un prefijo antes del nombre del comando.
 
-To create normal command, Create new file at `src/Commands/CategoryYouWant/`. Copy this template into your new `*.ts` file
+Para crear un comando normal, crea un nuevo archivo en `src/Commands/CategoriaQueDesees/`. Copia esta plantilla en tu nuevo archivo `*.ts`:
 
 ```ts title="src/Commands/**/*.ts"
 import { Message, MessageEmbed } from "discord.js";
 import { Command } from "../../Interfaces";
 
 export const command: Command = {
-  name: "test", // Command name
-  description: "", // Description of the Command
-  aliases: [], // Aliases
-  usage: "", // Usage
-  testOnly: false, // Is the command limited to your server only?
-  permissions: [], // Required perms to run this command
+  name: "test", // Nombre del comando
+  description: "", // Descripción del comando
+  aliases: [], // Alias
+  usage: "", // Uso
+  testOnly: false, // ¿Está limitado solo a tu servidor?
+  permissions: [], // Permisos requeridos para ejecutar el comando
   run: async (client, message, args) => {
-    // Your code here
-    message.channel.send({ content: "Hello from Zeta & TypeScript" });
+    // Tu código aquí
+    message.channel.send({ content: "Hola desde NeonixHub & TypeScript" });
   },
 };
 ```
 
-Then, Test your newly created command with `[prefix]test`. Where prefix is your configured prefix at `.env`
+Luego, prueba tu nuevo comando con `[prefix]test`, donde `prefix` es el prefijo configurado en `.env`.
 
-:::tip Tip
+:::tip Consejo
 
-Use development server to restart server when any changes made to watched file.
+Usa un servidor de desarrollo para reiniciar el servidor cuando se realicen cambios en los archivos observados.
 
 :::
 
-## Slash Command
+## Comando de barra (/Slash Command)
 
-This is a hotly discussed things at Discord. Now you can make your own slash command you want.
+Este es un tema muy debatido en Discord. Ahora puedes crear tu propio comando de barra como desees.
 
-Create new file at `src/Slash/CategoryYouWant/`, then copy this template into your new `*.ts` file.
+Crea un nuevo archivo en `src/Slash/CategoriaQueDesees/`, luego copia esta plantilla en tu nuevo archivo `*.ts`:
 
 ```ts title="src/Slash/**/*.ts"
 import { MessageEmbed } from "discord.js";
 import { Slash } from "../../Interfaces";
 
 export const slash: Slash = {
-  name: "test", // Command name
-  description: "", // Description of the Command
-  testOnly: false, // Is the command limited to your server only?
-  options: [], // Slash command options
+  name: "test", // Nombre del comando
+  description: "", // Descripción del comando
+  testOnly: false, // ¿Está limitado solo a tu servidor?
+  options: [], // Opciones del comando de barra
   run: async (client, interaction, args) => {
-    // Send a message when slash command is executed
+    // Enviar un mensaje cuando se ejecute el comando de barra
     interaction.followUp({
-      content: "Hello from Zeta & TypeScript! This is a slash command. Right?",
+      content: "Hola desde NeonixHub & TypeScript! Este es un comando de barra, ¿cierto?",
     });
   },
 };
 ```
 
-Then, Test your newly created slash command by typing `/test` in Discord chat.
+Luego, prueba tu nuevo comando de barra escribiendo `/test` en el chat de Discord.
 
-:::info No slash commands detected at the server?
+:::info ¿No se detectan comandos de barra en el servidor?
 
-Make sure you have passed `bot` and `application.commands` scopes in [Discord Developer Portal](https://discord.com/developers/applications).
+Asegúrate de haber agregado los permisos `bot` y `application.commands` en [Discord Developer Portal](https://discord.com/developers/applications).
 
-Then, Invite back your bot using the newly generated link.
+Después, vuelve a invitar a tu bot usando el enlace recién generado.
 
 ![application.commands scope](https://cdn.upload.systems/uploads/YwXZIFS7.png)
 
