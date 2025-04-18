@@ -1,0 +1,17 @@
+---
+sidebar_position: 1
+--- 
+
+# Admin
+
+Comandos de Administración del bot para mejorar tu servidor y su seguridad.
+
+:::note[NeonixHub Admin]
+Algunos de estos comandos aún están en desarrollo.
+
+|  Nombre     |    
+------------------------
+|
+|
+|
+|
