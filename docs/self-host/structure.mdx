@@ -1,20 +1,29 @@
 ---
 sidebar_position: 4
-
 ---
 
-**Estructura de Carpetas**
+# Estructura
 
 ```
-. <---------------- Carpeta Raíz
-├── .github <------ Configuración de CI y del Repositorio en GitHub
+/neonixhub <------- Carpeta Raíz
 ├── node_modules <- Dependencias del Proyecto
-└── src <---------- Archivos Fuente
-   ├── Client <---- Carpeta del Cliente
-   ├── Commands <-- Carpeta de Comandos
-   ├── Events<----- Carpeta de Eventos
-   ├── Exports <--- Exportación de Variables y Funciones
-   ├── Interfaces < Interfaces de TypeScript
-   ├── Schema <---- Esquema de Base de Datos
-   └── Slash <----- Carpeta de Comandos Slash
+├── Commands <- Comandos del bot
+   └── SlashCommands <-------- Comandos de SlashCommands (/)
+      ├── Admin <- Comandos de Administración
+      ├── Owner <- Comandos de Owner del bot
+      ├── General <- Comandos generales
+      ├── Music <- Comandos de Musíca
+      └── Configs <- Comandos de configuración
+   └── PCommands <---------- Comandos de Prefix (+)
+      ├── Admin <- Comandos de Administración
+      ├── Owner <- Comandos de Owner del bot
+      ├── General <- Comandos generales
+      ├── Music <- Comandos de Musíca
+      └── Configs <- Comandos de configuración
+├── Events <--------- Eventos del Bot
+   ├── Ready <- Eventos de Inicio del bot
+   └── Handlers <- Handlers de Eventos y Comandos del Bot
+├── index.js <- Archivo Principal
+├── config.js <- Configuración general del Bot
+└── .env <- Archivo de configuración Importante
 ```
