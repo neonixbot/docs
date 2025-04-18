@@ -1,14 +1,14 @@
-# 📄 Zeta Documentation
+# 📄 NeonixHub
 
-[![Netlify Status](https://img.shields.io/netlify/7dc40a21-7a2a-4ab8-a617-cf01b10db778?logo=netlify&style=for-the-badge)]() [![License](https://img.shields.io/github/license/koyorin/koyorin?style=for-the-badge)](./LICENSE) [![Made with](https://img.shields.io/badge/Made%20with-Docusaurus-green?style=for-the-badge)](https://docusaurus.io)
+[![Licencia](https://img.shields.io/github/license/koyorin/koyorin?style=for-the-badge)](./LICENSE) [![Hecho con](https://img.shields.io/badge/Made%20with-Docusaurus-green?style=for-the-badge)](https://docusaurus.io)
 
-## ➡️ Development
+## ➡️ Desarollo
 
-### 📥 Requirements
+### 📥 Requierimentos
 
-A node.js >= 16.12.0 setup with [yarn](https://yarnpkg.com) is highly recommended.
+Node.js >= 16.12.0 con [yarn](https://yarnpkg.com) es altamente recomendado
 
-### 📦 Install dependencies
+### 📦 Instalar dependencias
 
 ```bash
 $ yarn install
@@ -22,7 +22,7 @@ $ yarn install
 # ✨  Done in 1s.
 ```
 
-### 🏃 Start development server
+### 🏃 Iniciar servidor de desarollo
 
 ```bash
 $ yarn start
